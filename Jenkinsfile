@@ -30,7 +30,7 @@ node {
         script {
             try {
                 startZap(host: "127.0.0.1", port: "${OWASP_ZAP_PORT}".toInteger(), timeout: 900, zapHome: "${OWASP_ZAP_HOME}")
-                sleep (time:45, unit:"SECONDS")
+                sleep (time:200, unit:"SECONDS")
                 runZapCrawler(host: "http://localhost:${TOMCAT_PORT}/petclinic")
             }
             catch(err) {
