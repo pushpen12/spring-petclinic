@@ -260,7 +260,7 @@
             <plugin>
               <groupId>org.owasp</groupId>
               <artifactId>dependency-check-maven</artifactId>
-              <version>5.0.0-M2</version>
+              <version>5.1.0</version>
               <!-- After supplying this configuration, the XML report is generated
               without this configuration block, the XML report is not generated -->
               <configuration>
